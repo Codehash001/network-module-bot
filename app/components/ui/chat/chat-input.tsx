@@ -77,9 +77,10 @@ export default function ChatInput(
   };
 
   return (
+    <div className=" px-8 py-4 bg-none ">
     <form
       onSubmit={onSubmit}
-      className="rounded-xl bg-white p-4 shadow-xl space-y-4 shrink-0"
+      className="bg-whiteshadow-xl space-y-4 shrink-0 border p-4 shadow-xl rounded-2xl"
     >
       {imageUrl && (
         <UploadImagePreview url={imageUrl} onRemove={() => setImageUrl(null)} />
@@ -121,5 +122,6 @@ export default function ChatInput(
         </Button>
       </div>
     </form>
+    </div>
   );
 }

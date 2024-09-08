@@ -32,7 +32,7 @@ export default function ChatSection() {
   });
 
   return (
-    <div className="space-y-4 w-full h-full flex flex-col">
+    <div className="space-y-4 w-full h-full flex flex-col p-2">
       <ChatMessages
         messages={messages}
         isLoading={isLoading}
